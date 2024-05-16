@@ -148,9 +148,9 @@
                   <label for="checkbox1">Ja, ich nehme gerne teil</label>
               </div>
               <div>
-                  <input class="radio" type="radio" id="checkbox2" name="teilnahme" value="Ja, ich nehme gerne teil und komme mit Begleitung" tabindex="2" 
+                  <input class="radio" type="radio" id="additionalPerson" name="teilnahme" value="Ja, ich nehme gerne teil und komme mit Begleitung" tabindex="2" 
                   <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil und komme mit Begleitung") ? "checked" : "" ?>>
-                  <label for="checkbox2">Ja, ich nehme gerne teil und komme mit Begleitung</label>
+                  <label for="additionalPerson">Ja, ich nehme gerne teil und komme mit Begleitung</label>
               </div>
               <div>
                   <input class="radio" type="radio" id="checkbox3" name="teilnahme" value="Leider bin ich verhindert" tabindex="3"

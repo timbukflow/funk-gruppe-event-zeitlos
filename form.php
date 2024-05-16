@@ -60,10 +60,7 @@
     }
 
     // Zusätzliche Person 
-    $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
-
-    if ($additionalPerson) {
-
+    if ($teilnahme == 'Ja, ich nehme gerne teil und komme mit Begleitung') {
         if (empty($_POST["vorname2"])) {
             $errors["vorname2"] = "Vorname ist erforderlich";
         } else {
@@ -72,7 +69,7 @@
                 $errors["vorname2"] = "Es sind nur Buchstaben erlaubt";
             }
         }
-
+    
         if (empty($_POST["name2"])) {
             $errors["name2"] = "Name ist erforderlich";
         } else {
@@ -81,7 +78,7 @@
                 $errors["name2"] = "Es sind nur Buchstaben erlaubt";
             }
         }
-
+    
         if (empty($_POST["firma2"])) {
             $errors["firma2"] = "Firma ist erforderlich";
         } else {
@@ -90,7 +87,7 @@
                 $errors["firma2"] = "Es sind nur Buchstaben erlaubt";
             }
         }
-
+    
         if (empty($_POST["email2"])) {
             $errors["email2"] = "Email ist erforderlich";
         } else {
@@ -115,23 +112,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $value = implode(", ", $value);
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
-            $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
+            $message_body .= "Teilnahme: " . sanitizeInput($teilnahme) . "\n";
             $message_body .= "Vorname: " . sanitizeInput($vorname) . "\n";
             $message_body .= "Name: " . sanitizeInput($name) . "\n";
             $message_body .= "Firma: " . sanitizeInput($firma) . "\n";
             $message_body .= "Email: " . sanitizeInput($email) . "\n";
-            if (isset($_POST['essenspraferenz'])) {
-                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
+            if (isset($essenspraferenz)) {
+                $message_body .= "Essenspräferenz: " . sanitizeInput($essenspraferenz) . "\n";
             }
 
-            if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
+            if ($teilnahme == 'Ja, ich nehme gerne teil und komme mit Begleitung') {
                 $message_body .= "\nWeitere Person:\n";
                 $message_body .= "Vorname: " . sanitizeInput($vorname2) . "\n";
                 $message_body .= "Name: " . sanitizeInput($name2) . "\n";
                 $message_body .= "Firma: " . sanitizeInput($firma2) . "\n";
                 $message_body .= "Email: " . sanitizeInput($email2) . "\n";
-                if (isset($_POST['essenspraferenz2'])) {
-                    $message_body .= "Essenspräferenz: " . ($essenspraferenz2 == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
+                if (isset($essenspraferenz2)) {
+                    $message_body .= "Essenspräferenz: " . sanitizeInput($essenspraferenz2) . "\n";
                 }
             }
 

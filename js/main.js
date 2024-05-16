@@ -19,7 +19,7 @@ $(document).ready(function() {
     // Zusätzliche Felder für die weitere Person anzeigen/ausblenden
     $('input[name="teilnahme"]').change(function() {
         var additionalPersonFields = $('#additionalPersonFields');
-        if ($('#checkbox2').is(':checked')) {
+        if ($('#additionalPerson').is(':checked')) {
             additionalPersonFields.show();
         } else {
             additionalPersonFields.hide();
@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
 
     // Initialisierung - Zustand beim Laden der Seite prüfen
-    if ($('#checkbox2').is(':checked')) {
+    if ($('#additionalPerson').is(':checked')) {
         $('#additionalPersonFields').show();
     } else {
         $('#additionalPersonFields').hide();
