@@ -141,7 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          
         $headers = "From: anmeldung@funk-gruppe-event.ch";
         $to = "ivoschwizer@gmail.com";
-        $subject = "Funk Gruppe Event | meet&eat";
+        $subject = "Funk Gruppe Event | Zeitlos";
         $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
             
         if (mail($to, $subject, $message_body, $headers)){
