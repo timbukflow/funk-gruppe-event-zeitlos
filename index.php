@@ -160,7 +160,7 @@
               <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
           </fieldset>
           
-        <!-- Felder -->
+        <!-- Person 01 -->
           <fieldset>
             <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
             <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
@@ -179,6 +179,20 @@
           <fieldset>
             <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
             <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
+          </fieldset>
+          
+          <!-- Person 01 - Essenspraferenz -->
+          <fieldset class="checkbox">
+            <div>
+              <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="vegetarisch" tabindex="3" 
+              <?= (isset($essenspraferenz) && $essenspraferenz == "vegetarisch") ? "checked" : "" ?>>
+              <label for="checkboxvegi">vegetarisch</label>
+            </div>
+            <div>
+              <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="mit Fleisch" tabindex="4"
+              <?= (isset($essenspraferenz) && $essenspraferenz == "mit Fleisch") ? "checked" : "" ?>>
+              <label for="checkboxfleisch">mit Fleisch</label>
+            </div>
           </fieldset>
 
           <!-- Zusätzliche Felder für die weitere Person -->
@@ -202,7 +216,22 @@
               <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
               <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
             </fieldset>
+
+            <!-- Person 02 - Essenspraferenz -->
+            <fieldset class="checkbox">
+              <div>
+                <input class="radio" type="radio" id="checkboxvegi2" name="essenspraferenz2" value="vegetarisch" tabindex="3" 
+                <?= (isset($essenspraferenz2) && $essenspraferenz2 == "vegetarisch") ? "checked" : "" ?>>
+                <label for="checkboxvegi2">vegetarisch</label>
+              </div>
+              <div>
+                <input class="radio" type="radio" id="checkboxfleisch2" name="essenspraferenz2" value="mit Fleisch" tabindex="4"
+                <?= (isset($essenspraferenz2) && $essenspraferenz2 == "mit Fleisch") ? "checked" : "" ?>>
+                <label for="checkboxfleisch2">mit Fleisch</label>
+              </div>
+            </fieldset>
           </fieldset>
+
             
           <!-- Mitteilung -->
           <fieldset>

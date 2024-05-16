@@ -5,7 +5,7 @@
     }
 
     function validateForm() {
-    global $teilnahme, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2;
+    global $teilnahme, $vorname, $name, $firma, $email, $essenspraferenz, $mitteilung, $vorname2, $name2, $firma2, $email2, $essenspraferenz2;
 
     $errors = [];
 
@@ -49,6 +49,10 @@
         if (!$email) {
             $errors["email"] = "Diese Email Adresse ist nicht korrekt";
         }
+    }
+
+    if (isset($_POST["essenspraferenz"])) {
+        $essenspraferenz = $_POST["essenspraferenz"];
     }
 
     if (!empty($_POST["mitteilung"])) {
@@ -116,7 +120,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body .= "Name: " . sanitizeInput($name) . "\n";
             $message_body .= "Firma: " . sanitizeInput($firma) . "\n";
             $message_body .= "Email: " . sanitizeInput($email) . "\n";
-            $message_body .= "Mitteilung: " . sanitizeInput($mitteilung) . "\n";
+            if (isset($_POST['essenspraferenz'])) {
+                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
+            }
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
@@ -124,7 +130,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $message_body .= "Name: " . sanitizeInput($name2) . "\n";
                 $message_body .= "Firma: " . sanitizeInput($firma2) . "\n";
                 $message_body .= "Email: " . sanitizeInput($email2) . "\n";
-            }            
+                if (isset($_POST['essenspraferenz2'])) {
+                    $message_body .= "Essenspräferenz: " . ($essenspraferenz2 == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
+                }
+            }
+
+            $message_body .= "Mitteilung: " . sanitizeInput($mitteilung) . "\n";            
         }
          
         $headers = "From: anmeldung@funk-gruppe-event.ch";
@@ -134,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
         if (mail($to, $subject, $message_body, $headers)){
             $success = "";
-            $teilnahme = $vorname = $name = $firma = $email = $mitteilung = "";
+            $teilnahme = $vorname = $name = $firma = $email = $essenspraferenz = $mitteilung = "";
         }
         } else {
             $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
@@ -142,6 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = isset($_POST["name"]) ? $_POST["name"] : "";
             $firma = isset($_POST["firma"]) ? $_POST["firma"] : "";
             $email = isset($_POST["email"]) ? $_POST["email"] : "";
+            $essenspraferenz = isset($_POST["essenspraferenz"]) ? $_POST["essenspraferenz"] : "";
             $mitteilung = isset($_POST["mitteilung"]) ? $_POST["mitteilung"] : "";
         }
 }
