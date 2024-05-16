@@ -4,44 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
-    <title>Funk Gruppe Event | Funk Connect 2024</title>
-    <meta name="description" content="Funk Gruppe Event | Funk Connect 2024">
+    <title>Funk Gruppe Event - Zeitlos | Wir feiern 145 Jahre Funk</title>
+    <meta name="description" content="Funk Gruppe Event - Zeitlos | Wir feiern 145 Jahre Funk">
     <?php require_once 'head.php'; ?>
 </head>
 
 <body>
     <header>
         <div class="event-title">
-          <h1 class="header">Funk Connect</h1>
-          <h2 class="header">Aus der Praxis für die Praxis</h2>
-          <h2 class="fix">18. Juni 2024</h2>
-          <div class="event-container-img"></div> 
+          <h1 class="header">#zeitlos</h1>
+          <h2 class="header">Wir feiern 145 Jahre Funk</h2>
+          <h2 class="fix">26. September 2024</h2>
         </div>
+        <div class="event-container-img"></div> 
         <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
     </header>
 
     <section>
       <article class="intro">
-        <h1>Persönliche Einladung <br> Baurecht in der Praxis erleben</h1>
+        <h1>Herzliche Einladung</h1>
         <p>
-          <span>
-          Sehr geehrte Damen und Herren
-          </span>
-          <span>
-          Wir freuen uns, Sie zu unserem &laquo;Funk Connect&raquo; Event in unserer Niederlassung in Basel einzuladen. Unsere wiederkehrende Eventreihe &laquo;Funk Connect&raquo; bietet Einblicke von der Praxis für die Praxis. Knüpfen Sie wertvolle Kontakte in einem angenehmen und persönlichen Rahmen.
-          </span>
-          <span>
-          Erleben Sie ein spannendes Impulsreferat der <strong>NEOVIUS AG</strong> zu Themen des öffentlichen und privaten Baurechts und erfahren Sie praxisnahe Einblicke von Herrn Daniel Gebhardt, Fachanwalt SAV Bau- und Immobilienrecht.
-          </span>
-          <span>
-          Im Anschluss laden wir Sie herzlich zu einem Apéro Riche ein, bei dem ausreichend Zeit für ungezwungene Gespräche und Vernetzung bleibt.
-          </span>
-          <span>
-          Wir freuen uns auf einen interessanten Austausch und einen gemütlichen Abend mit Ihnen.<br><br>
-          <strong>Philipp Buser</strong><br>
-          Leiter Niederlassung Basel</p>
-          </span>
-          
+          Geschätzte Geschäftspartner
+          <br><br>
+          Wir freuen uns, Sie zu unserem Kundenevent <strong>#zeitlos</strong> einzuladen! Gemeinsam mit Ihnen möchten wir einen unvergesslichen Abend in der Zentralschweiz verbringen. Der industrielle Charme der alten &laquo;Viscose&raquo; bietet den perfekten Rahmen, um gemeinsam auf <strong>145 Jahre Funk</strong> zurückzuschauen und einen Blick in die ferne Zukunft zu werfen.
+        </p>
+        <p class="text">
+          <strong>Was erwartet Sie?</strong>
+          <ul>
+            <li><strong>Charmante Moderation:</strong> Ein unterhaltsamer Abend, sympathisch begleitet, in bester Gesellschaft</li>
+            <li><strong>Überraschungen:</strong> Wir haben einige Überraschungen für Sie vorbereitet! Freuen Sie sich auf besondere Momente und unerwartete Highlights.</li>
+            <li><strong>Gepflegte Kulinarik:</strong> Geniessen Sie ein feines Abendessen und lassen Sie uns auf 145 Jahre Funk anstossen.</li>
+            <li><strong>Musikalische Begleitung:</strong> Lassen Sie sich von Live-Musik mitreissen oder von dezentem Jazz auf den Freitag einstimmen.</li>
+          </ul>
+        </p>
+        <p class="text">
+          Wir freuen uns auf #zeitlos und vor allem auf Sie!
         </p>
       </article>
 
@@ -55,27 +52,27 @@
           <div class="acclist">
             <div class="grid02">
               <p><strong>Datum</strong> </p>
-              <p><strong>Dienstag, 18. Juni 2024</strong></p>
-              <p>17:45 Uhr</p>
-              <p>Eintreffen der Gäste</p>
+              <p><strong>Donnerstag, 26. September 2024</strong></p>
+              <p>16:30 Uhr</p>
+              <p>Türöffnung und Apéro </p>
               <p>18:00 Uhr</p>
-              <p>Begrüssung / Referat Daniel Gebhardt</p>
-              <p class="noline" >19:00 Uhr</p>
-              <p class="noline" >Apéro riche / Networking</p>
+              <p>Beginn und Begrüssung, Dinner und überraschende Show Acts</p>
+              <p class="noline" >24.00 Uhr </p>
+              <p class="noline" >Ende</p>
             </div>
           </div>
         </div>
         <div class="acctitle">
-          <h2>Referent</h2>
+          <h2>Moderation</h2>
           <div class="pmcontainer">
             <div class="plus"></div>
             <div class="minus"></div>
           </div>
           <div class="acclist">
             <div class="grid02 center">
-              <img src="./img/daniel-gebhardt.jpg" alt="daniel-gebhardt">
+              <img src="./img/zoe-torinesi-m.jpg" alt="Zoe Torinesi">
               <p class="noline">
-                <strong>Daniel Gebhardt,</strong> <br> geboren 1960, Partner Neovius AG, Fachanwalt SAV Bau- und Immobilienrecht. Berät Unternehmen, öffentliche Hand und Privatpersonen in allen Belangen des Bau- und Immobilienrechts. Spezialisiert auf Raumplanung, Vertragswesen, Umweltschutzrecht, Submissionsrecht und Enteignungsrecht. Experte in der Begleitung von Grossprojekten vom Beginn bis zur Fertigstellung.
+                <strong>Zoe Torinesi,</strong> <br> eine erfahrene Moderatorin, leitet seit vielen Jahren erfolgreich zahlreiche Veranstaltungen und Schweizer TV-Formate. Sie spricht fließend vier Sprachen und betreibt seit 2014 ihren erfolgreichen Foodblog.
               </p>
             </div>
           </div>
@@ -89,80 +86,146 @@
           <div class="acclist">
             <div class="grid01">
               <p>
-                <strong>Funk Gruppe</strong> <br>
-                Henric Petri-Strasse 12, 4051 Basel
+                <strong>VISCOSE Eventhalle</strong> <br>
+                Emmenweidstrasse 20, 6020 Emmenbrücke
               </p>
               <p>
                 <strong>Anreise mit dem ÖV:</strong> <br>
-                Ab Bahnhof SBB mit 1er-Tram bis Kirschgarten, 3 Gehminuten entfernt
+                Bahnhof Emmenbrücke ist in 5 Gehminuten und von der Bushaltestelle Tramhüsli in 2 Gehminuten erreichbar.
               </p>
               <p class="noline">
-                <strong>Anreise mit dem PW:</strong> <br> Parkhaus Drachencenter oder Parkhaus Anfos</p>
+                <strong>Anreise mit dem PW:</strong> <br>
+                Genügend Parkplätze vorhanden. Fahren Sie beim Seetalplatz am Kino MAXX vorbei, Richtung Emmenbrücke. Biegen Sie dann an der grossen Kreuzung über die Gleise links ab, aber halten Sie sich rechts von den Gleisen und folgen Sie den Gleisen sowie der Emmenweidstrasse für ungefähr 200 Meter. Die Viscose Eventhalle befindet sich auf der rechten Seite und ist nicht zu verfehlen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="acctitle">
+          <h2>Übernachtungsmöglichkeiten</h2>
+          <div class="pmcontainer">
+            <div class="plus"></div>
+            <div class="minus"></div>
+          </div>
+          <div class="acclist">
+            <div class="grid01">
+              <p>
+                Um Ihnen die Planung Ihrer Anreise und Übernachtung zu erleichtern, empfehlen wir Ihnen einige nahegelegene Hotels, in denen Sie auf Selbstkosten übernachten können.
+              </p>
+              <p>
+                <strong>LUX Businesshotel:</strong> <br>
+                Neuenkirchstrasse 3, 6020 Emmenbrücke <br>
+                <a href="https://www.hotel-lux.ch/" target="_blank">www.hotel-lux.ch</a>
+              </p>
+              <p>
+                <strong>Hotel Thorenberg:</strong> <br>
+                Thorenbergstrasse 5, 6014 Luzern-Littau <br>
+                <a href="https://www.thorenberg.ch/de/Hotel" target="_blank">www.thorenberg.ch</a>
+              </p>
+              <p class="noline"> 
+                <strong>feRUS:</strong> <br>
+                Rothenburgstrasse 45, 6020 Emmen <br>
+                <a href="https://sinnvollgastro.ch/unsere-betriebe/ferus-hotel-restaurant" target="_blank">www.sinnvollgastro.ch</a>
+              </p>
             </div>
           </div>
         </div>
       </article>
       
       <div id="anmeldung" class="containerform">
-            <h2>Anmeldung</h2>
-            <p>Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <strong>Anmeldeschluss ist der 4. Juni 2024.</strong></p>
-            <?php require_once('form.php'); ?>
-
-            <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
-              
-              <fieldset class="checkbox">
-                <div>
+        <h2>Anmeldung</h2>
+        <p>
+            Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <strong>Anmeldeschluss ist am 14. Juni 2024.</strong>
+        </p>
+        
+        <?php include('form.php'); ?>
+        <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
+          
+        <!-- Checkbox -->
+          <fieldset class="checkbox">
+              <div>
                   <input class="radio" type="radio" id="checkbox1" name="teilnahme" value="Ja, ich nehme gerne teil" tabindex="1" 
                   <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil") ? "checked" : "" ?>>
                   <label for="checkbox1">Ja, ich nehme gerne teil</label>
-                </div>
-                <div>
-                  <input class="radio" type="radio" id="checkbox2" name="teilnahme" value="Leider bin ich verhindert" tabindex="2"
+              </div>
+              <div>
+                  <input class="radio" type="radio" id="checkbox2" name="teilnahme" value="Ja, ich nehme gerne teil und komme mit Begleitung" tabindex="2" 
+                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil und komme mit Begleitung") ? "checked" : "" ?>>
+                  <label for="checkbox2">Ja, ich nehme gerne teil und komme mit Begleitung</label>
+              </div>
+              <div>
+                  <input class="radio" type="radio" id="checkbox3" name="teilnahme" value="Leider bin ich verhindert" tabindex="3"
                   <?= (isset($teilnahme) && $teilnahme == "Leider bin ich verhindert") ? "checked" : "" ?>>
-                  <label for="checkbox2">Leider bin ich verhindert</label>
-                </div>
-                <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
-              </fieldset>
+                  <label for="checkbox3">Leider bin ich verhindert</label>
+              </div>
+              <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
+          </fieldset>
+          
+        <!-- Felder -->
+          <fieldset>
+            <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
+            <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
+          </fieldset>
 
-              <fieldset>
-                <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
-                <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
-              </fieldset>
+          <fieldset>
+            <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="6">
+            <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
+          </fieldset>
 
-              <fieldset>
-                <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="6">
-                <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
-              </fieldset>
+          <fieldset>
+            <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="7">
+            <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
+          </fieldset>
 
-              <fieldset>
-                <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="7">
-                <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
-              </fieldset>
+          <fieldset>
+            <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
+            <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
+          </fieldset>
 
-              <fieldset>
-                <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
-                <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
-              </fieldset>
+          <!-- Zusätzliche Felder für die weitere Person -->
+          <fieldset id="additionalPersonFields" style="display:none;">
+            <fieldset>
+              <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
+              <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
+            </fieldset>
 
-              <fieldset>
-                <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
-                <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
-              </fieldset>
+            <fieldset>
+              <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
+              <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
+            </fieldset>
 
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
-              </fieldset>
-            </form>
+            <fieldset>
+              <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
+              <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
+            </fieldset>
 
-            <div id="popup" class="popup">
-              <h1>Vielen Dank für Ihr Interesse!</h1> 
-              <p>Ihre An- oder Abmeldung haben wir erhalten. Eine persönliche Bestätigung Ihrer Anmeldung erhalten Sie in den nächsten Tagen per E-Mail.<br><br>
-              Herzliche Grüsse <br>
-              Philipp Buser <br>
-              Leiter Niederlassung Basel</p>
-              <button id="closePopup">Alles klar!</button>
-            </div>
-      </div> 
+            <fieldset>
+              <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
+              <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
+            </fieldset>
+          </fieldset>
+            
+          <!-- Mitteilung -->
+          <fieldset>
+            <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
+              <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
+          </fieldset>
+
+          <!-- Button -->
+          <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
+          </fieldset>
+          <div class="success"><?= htmlspecialchars($success); ?></div>
+        </form>
+
+        <div id="popup" class="popup">
+            <h1>Vielen Dank für Ihr Interesse!</h1> 
+            <p>Ihre An- oder Abmeldung haben wir erhalten. Gerne werden wir Ihnen kurz vor dem Anlass nochmals die wichtigsten Infos per Mail zustellen.<br><br>
+            Herzliche Grüsse <br> 
+            Jonas Müller <br>
+            Leiter Niederlassung Bern</p>
+            <button id="closePopup">Alles klar!</button>
+        </div>
+    </div> 
     </section>
 
     <script>

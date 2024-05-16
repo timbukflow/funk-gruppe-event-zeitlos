@@ -5,14 +5,14 @@
     }
 
     function validateForm() {
-    global $teilnahme, $vorname, $name, $firma, $email, $mitteilung;
+    global $teilnahme, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2;
 
     $errors = [];
 
     if (empty($_POST["teilnahme"])) {
         $errors["teilnahme"] = "Bitte wählen Sie mindestens eine Option aus";
     } else {
-        $teilnahme = htmlspecialchars($_POST["teilnahme"]);
+        $teilnahme = $_POST["teilnahme"];
     }
 
     if (empty($_POST["vorname"])) {
@@ -55,38 +55,87 @@
         $mitteilung = htmlspecialchars($_POST["mitteilung"]);
     }
 
+    // Zusätzliche Person 
+    $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
+
+    if ($additionalPerson) {
+
+        if (empty($_POST["vorname2"])) {
+            $errors["vorname2"] = "Vorname ist erforderlich";
+        } else {
+            $vorname2 = filter_var($_POST["vorname2"], FILTER_SANITIZE_STRING);
+            if (empty($vorname2)) {
+                $errors["vorname2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["name2"])) {
+            $errors["name2"] = "Name ist erforderlich";
+        } else {
+            $name2 = filter_var($_POST["name2"], FILTER_SANITIZE_STRING);
+            if (empty($name2)) {
+                $errors["name2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["firma2"])) {
+            $errors["firma2"] = "Firma ist erforderlich";
+        } else {
+            $firma2 = filter_var($_POST["firma2"], FILTER_SANITIZE_STRING);
+            if (empty($firma2)) {
+                $errors["firma2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["email2"])) {
+            $errors["email2"] = "Email ist erforderlich";
+        } else {
+            $email2 = filter_var($_POST["email2"], FILTER_VALIDATE_EMAIL);
+            if (!$email2) {
+                $errors["email2"] = "Diese Email Adresse ist nicht korrekt";
+            }
+        }
+    }
+
     return $errors;
 }
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $errors = validateForm();
-
-        if (empty($errors)) {
-            $message_body = "";
-            unset($_POST["submit"]);
-            foreach ($_POST as $key => $value) {
-                if (is_array($value)) {
-                    $value = implode(", ", $value);
-                }
-                $message_body = "Anmeldung zur Veranstaltung\n\n";
-                $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
-                $message_body .= "Vorname: " . sanitizeInput($vorname) . "\n";
-                $message_body .= "Name: " . sanitizeInput($name) . "\n";
-                $message_body .= "Firma: " . sanitizeInput($firma) . "\n";
-                $message_body .= "Email: " . sanitizeInput($email) . "\n";
-                $message_body .= "Mitteilung: " . sanitizeInput($mitteilung) . "\n";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $errors = validateForm();
+    
+    if (empty($errors)) {
+        $message_body = "";
+        unset($_POST["submit"]);
+        foreach($_POST as $key => $value){
+            if (is_array($value)) {
+                $value = implode(", ", $value);
             }
+            $message_body = "Anmeldung zur Veranstaltung\n\n";
+            $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
+            $message_body .= "Vorname: " . sanitizeInput($vorname) . "\n";
+            $message_body .= "Name: " . sanitizeInput($name) . "\n";
+            $message_body .= "Firma: " . sanitizeInput($firma) . "\n";
+            $message_body .= "Email: " . sanitizeInput($email) . "\n";
+            $message_body .= "Mitteilung: " . sanitizeInput($mitteilung) . "\n";
 
-            $headers = "From: anmeldung@funk-gruppe-event.ch";
-            $to = "basel@funk-gruppe.ch";
-            $subject = "Funk Gruppe Event | Funk Connect";
+            if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
+                $message_body .= "\nWeitere Person:\n";
+                $message_body .= "Vorname: " . sanitizeInput($vorname2) . "\n";
+                $message_body .= "Name: " . sanitizeInput($name2) . "\n";
+                $message_body .= "Firma: " . sanitizeInput($firma2) . "\n";
+                $message_body .= "Email: " . sanitizeInput($email2) . "\n";
+            }            
+        }
+         
+        $headers = "From: anmeldung@funk-gruppe-event.ch";
+        $to = "ivoschwizer@gmail.com";
+        $subject = "Funk Gruppe Event | meet&eat";
+        $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
             
-            $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
-            
-            if (mail($to, $subject, $message_body, $headers)){
-                $success = "";
-                $teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = "";
-            }
+        if (mail($to, $subject, $message_body, $headers)){
+            $success = "";
+            $teilnahme = $vorname = $name = $firma = $email = $mitteilung = "";
+        }
         } else {
             $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
             $vorname = isset($_POST["vorname"]) ? $_POST["vorname"] : "";
@@ -95,5 +144,5 @@
             $email = isset($_POST["email"]) ? $_POST["email"] : "";
             $mitteilung = isset($_POST["mitteilung"]) ? $_POST["mitteilung"] : "";
         }
-    }
+}
 ?>

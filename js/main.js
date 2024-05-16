@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-  
+$(document).ready(function() {
     // Accordion
     $('.acctitle').click(function() {
         $accCross = $(this).children('.pmcontainer');
@@ -14,8 +13,23 @@ $( document ).ready(function() {
     // Goto
     $('.goto').click(function() {
         var goto = $($(this).attr('href')).offset().top - 120;
-        
         $("body, html").animate({scrollTop: goto}, 1000);
     });
+
+    // Zusätzliche Felder für die weitere Person anzeigen/ausblenden
+    $('input[name="teilnahme"]').change(function() {
+        var additionalPersonFields = $('#additionalPersonFields');
+        if ($('#checkbox2').is(':checked')) {
+            additionalPersonFields.show();
+        } else {
+            additionalPersonFields.hide();
+        }
+    });
+
+    // Initialisierung - Zustand beim Laden der Seite prüfen
+    if ($('#checkbox2').is(':checked')) {
+        $('#additionalPersonFields').show();
+    } else {
+        $('#additionalPersonFields').hide();
+    }
 });
-  
