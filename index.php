@@ -162,34 +162,34 @@
           
         <!-- Person 01 -->
           <fieldset>
-            <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
+            <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="4" autofocus>
             <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
           </fieldset>
 
           <fieldset>
-            <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="6">
+            <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="5">
             <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
           </fieldset>
 
           <fieldset>
-            <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="7">
+            <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="6">
             <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
           </fieldset>
 
           <fieldset>
-            <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
+            <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="7">
             <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
           </fieldset>
           
           <!-- Person 01 - Essenspraferenz -->
           <fieldset class="checkbox">
             <div>
-              <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="vegetarisch" tabindex="3" 
+              <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="vegetarisch" tabindex="8" 
               <?= (isset($essenspraferenz) && $essenspraferenz == "vegetarisch") ? "checked" : "" ?>>
               <label for="checkboxvegi">vegetarisch</label>
             </div>
             <div>
-              <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="mit Fleisch" tabindex="4"
+              <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="mit Fleisch" tabindex="9"
               <?= (isset($essenspraferenz) && $essenspraferenz == "mit Fleisch") ? "checked" : "" ?>>
               <label for="checkboxfleisch">mit Fleisch</label>
             </div>
@@ -201,34 +201,34 @@
               <p>Meine Begleitung</p>
             </div>
             <fieldset>
-              <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
+              <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="10">
               <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
             </fieldset>
 
             <fieldset>
-              <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
+              <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="11">
               <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
             </fieldset>
 
             <fieldset>
-              <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
+              <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="12">
               <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
             </fieldset>
 
             <fieldset>
-              <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
+              <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="13">
               <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
             </fieldset>
 
             <!-- Person 02 - Essenspraferenz -->
             <fieldset class="checkbox">
               <div>
-                <input class="radio" type="radio" id="checkboxvegi2" name="essenspraferenz2" value="vegetarisch" tabindex="3" 
+                <input class="radio" type="radio" id="checkboxvegi2" name="essenspraferenz2" value="vegetarisch" tabindex="14" 
                 <?= (isset($essenspraferenz2) && $essenspraferenz2 == "vegetarisch") ? "checked" : "" ?>>
                 <label for="checkboxvegi2">vegetarisch</label>
               </div>
               <div>
-                <input class="radio" type="radio" id="checkboxfleisch2" name="essenspraferenz2" value="mit Fleisch" tabindex="4"
+                <input class="radio" type="radio" id="checkboxfleisch2" name="essenspraferenz2" value="mit Fleisch" tabindex="15"
                 <?= (isset($essenspraferenz2) && $essenspraferenz2 == "mit Fleisch") ? "checked" : "" ?>>
                 <label for="checkboxfleisch2">mit Fleisch</label>
               </div>
@@ -238,7 +238,7 @@
             
           <!-- Mitteilung -->
           <fieldset>
-            <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
+            <textarea placeholder="Mitteilung" name="mitteilung" tabindex="16" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
               <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
           </fieldset>
 
@@ -250,28 +250,37 @@
         </form>
 
         <div id="popup" class="popup">
-            <h1>Vielen Dank für Ihr Interesse!</h1> 
-            <p>Ihre An- oder Abmeldung haben wir erhalten. Gerne werden wir Ihnen kurz vor dem Anlass nochmals die wichtigsten Infos per Mail zustellen.<br><br>
-            Herzliche Grüsse <br> 
-            Jonas Müller <br>
-            Leiter Niederlassung Bern</p>
-            <button id="closePopup">Alles klar!</button>
+          <h1>Vielen Dank für Ihr Interesse!</h1> 
+          <p id="popupText"></p>
+          <p>Herzliche Grüsse <br> Ihr Funk-Team </p>
+          <button id="closePopup">Alles klar!</button>
         </div>
-    </div> 
+      </div> 
     </section>
 
     <script>
-      function showPopup() {
+      function showPopup(message) {
+          document.getElementById('popupText').innerText = message;
           document.getElementById('popup').style.display = 'block';
       }
+
       document.getElementById('closePopup').addEventListener('click', function() {
           document.getElementById('popup').style.display = 'none';
       });
 
-      <?php if (isset($success)) { ?>
-          showPopup();
+      <?php if (isset($success) && $success == "true") { ?>
+          var teilnahmeText = "";
+          <?php if ($teilnahme == "Ja, ich nehme gerne teil") { ?>
+              teilnahmeText = "Vielen Dank für Ihre Zusage! Wir freuen uns, dass Sie teilnehmen werden. Sie erhalten in den nächsten Tagen eine definitive Bestätigung.";
+          <?php } elseif ($teilnahme == "Ja, ich nehme gerne teil und komme in Begleitung") { ?>
+              teilnahmeText = "Vielen Dank für Ihre Zusage! Wir freuen uns, dass Sie mit Begleitung teilnehmen werden. Sie erhalten in den nächsten Tagen eine definitive Bestätigung.";
+          <?php } elseif ($teilnahme == "Leider bin ich verhindert") { ?>
+              teilnahmeText = "Es tut uns leid, dass Sie nicht teilnehmen können.";
+          <?php } ?>
+          showPopup(teilnahmeText);
       <?php } ?>
     </script>
+
 
     <?php require_once 'footer.php'; ?>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>

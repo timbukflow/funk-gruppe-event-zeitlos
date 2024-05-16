@@ -145,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
             
         if (mail($to, $subject, $message_body, $headers)){
-            $success = "";
+            $success = "true";
             $teilnahme = $vorname = $name = $firma = $email = $essenspraferenz = $mitteilung = "";
         }
         } else {
