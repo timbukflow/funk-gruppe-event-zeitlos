@@ -250,37 +250,27 @@
         </form>
 
         <div id="popup" class="popup">
-          <h1>Vielen Dank für Ihr Interesse!</h1> 
-          <p id="popupText"></p>
-          <p>Herzliche Grüsse <br> Ihr Funk-Team </p>
-          <button id="closePopup">Alles klar!</button>
+            <h1>Vielen Dank für Ihr Interesse!</h1> 
+            <p>Ihre An- oder Abmeldung haben wir erhalten. Gerne werden wir Ihnen kurz vor dem Anlass nochmals die wichtigsten Infos per Mail zustellen.<br><br>
+            Herzliche Grüsse <br> 
+            Ihr Funk-Team <br>
+            <button id="closePopup">Alles klar!</button>
         </div>
-      </div> 
+    </div> 
     </section>
 
     <script>
-      function showPopup(message) {
-          document.getElementById('popupText').innerText = message;
+      function showPopup() {
           document.getElementById('popup').style.display = 'block';
       }
-
       document.getElementById('closePopup').addEventListener('click', function() {
           document.getElementById('popup').style.display = 'none';
       });
 
-      <?php if (isset($success) && $success == "true") { ?>
-          var teilnahmeText = "";
-          <?php if ($teilnahme == "Ja, ich nehme gerne teil") { ?>
-              teilnahmeText = "Vielen Dank für Ihre Zusage! Wir freuen uns, dass Sie teilnehmen werden. Sie erhalten in den nächsten Tagen eine definitive Bestätigung.";
-          <?php } elseif ($teilnahme == "Ja, ich nehme gerne teil und komme in Begleitung") { ?>
-              teilnahmeText = "Vielen Dank für Ihre Zusage! Wir freuen uns, dass Sie mit Begleitung teilnehmen werden. Sie erhalten in den nächsten Tagen eine definitive Bestätigung.";
-          <?php } elseif ($teilnahme == "Leider bin ich verhindert") { ?>
-              teilnahmeText = "Es tut uns leid, dass Sie nicht teilnehmen können.";
-          <?php } ?>
-          showPopup(teilnahmeText);
+      <?php if (isset($success)) { ?>
+          showPopup();
       <?php } ?>
     </script>
-
 
     <?php require_once 'footer.php'; ?>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
