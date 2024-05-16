@@ -415,7 +415,7 @@ footer  {
   h1.header {font-size: 60px;}
   h2.header {font-size: 30px;}
   h3, .containerform p {font-size: 16px; text-align: left;}
-  p, label, input, textarea, button, a {font-size: 16px;}
+  p, li, label, input, textarea, button, a {font-size: 16px;}
   section {width: 90%;}
   .homebutton {bottom: 30px;}
   .containerform form {margin: 20px 0 0;}

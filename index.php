@@ -101,7 +101,7 @@
           </div>
         </div>
         <div class="acctitle">
-          <h2>Übernachtungsmöglichkeiten</h2>
+          <h2>Übernachtung</h2>
           <div class="pmcontainer">
             <div class="plus"></div>
             <div class="minus"></div>
