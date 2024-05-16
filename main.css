@@ -1,0 +1,416 @@
+/*
+    Theme Name: Funk-Gruppe-Event
+    Version: 3.0
+    Author: SchwizerDesign
+    Author URI: http://schwizerdesign.ch
+    Tags: No Tags
+*/
+
+:root {
+  --funkblue: #005092;
+  --funkgreen: #6fbf55;
+  --funkblack: #515151;
+  --funkgray: #d1d1d1;
+}
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+h1, h2, h3, p, input, textarea, button, label {
+    color: var(--funkblack);
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+  padding-bottom: 20px;
+}
+h1.header {
+  font-size: 90px;
+  padding-bottom: 0;
+}
+h2.header {
+  font-size: 50px;
+}
+h3 {
+  font-size: 15px;
+  text-align: right;
+  padding: 15px;
+}
+
+p, .error, .success, label, input, button, textarea, a {
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+}
+
+span {
+  display: block;
+}
+strong {
+  font-weight: 600;
+}
+
+/*----------------------------------
+    Basic
+-----------------------------------*/
+
+section {
+  width: 800px;
+  margin: 0 auto;
+}
+article{
+  margin: 50px 0 0;
+}
+
+/*----------------------------------
+    Header
+-----------------------------------*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+}
+
+header h1,
+header h2 {
+  color: var(--funkblue);
+}
+
+.asheader {
+  background-color: white;
+  width: 100%;
+}
+
+.event-title {
+  padding: 30px 40px;
+  
+}
+
+.event-container-img {
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url('./img/funk-connect.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+.green {
+  color: var(--funkgreen);
+}
+
+.intro {
+  padding: 0 15px;
+}
+.intro span {
+  padding: 10px 0;
+}
+
+/*----------------------------------
+    Accordion
+-----------------------------------*/
+
+.acctitle {
+  cursor: pointer;
+  padding: 20px 15px;
+  border-top: 1px solid var(--funkblue);
+}
+
+.acctitle h2 {
+  display: inline-block;
+  color: var(--funkblue);
+}
+
+.pmcontainer {
+  float: right;
+  display: inline-block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  margin-top: 8px;
+  transition: transform .25s ease-in-out;
+}
+
+.plus, .minus {
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--funkblue);
+  vertical-align: middle;
+}
+.minus {
+  width: 22px;
+  height: 2px;
+  top: 10px;
+  left: 0px;
+}
+
+.pmrotate {
+  transform: rotate(45deg);
+  transition: transform .25s ease-in-out;
+}
+
+.acclist {
+  display: none;
+}
+
+.grid01 {
+  display: inline-block;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.grid02 {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.center {
+  align-items: center;
+}
+
+.center img {
+  width: 80%;
+  padding: 10%;
+}
+
+.acclist p {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--funkgray);
+}
+.acclist a {
+  padding: 15px 0;
+  color: var(--funkblack);
+}
+.acclist span {
+  opacity: 0.5;
+}
+.acclist .noline {
+  border-bottom: none;
+}
+
+/*----------------------------------
+    Contactform
+-----------------------------------*/
+
+.containerform {
+  border-top: 1px solid var(--funkblue);
+  padding: 20px 15px;
+}
+
+.containerform h2 {
+  color: var(--funkblue);
+  display: inline-block;
+  padding-right: 10px;
+  
+}
+.containerform p {
+  display: inline-block;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.containerform form {
+  margin: 30px 0 ;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+input, button, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  background-color: #EFF4F8;
+  margin: 10px 0 ;
+  padding: 18px;
+}
+
+label {
+  margin: 15px 0 ;
+  padding: 0px;
+}
+
+input:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+}
+
+textarea {
+    height:150px;
+    max-width:100%;
+    resize:none;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--funkgreen);
+    color: #fff;
+    transition:background-color 0.3s ease-in-out;
+    width: auto;
+}
+
+button:hover {
+    background-color: #4d833a;
+   
+}
+
+input:focus {
+    outline:1;
+    outline-color: #005092;
+    background-color: none;
+}
+textarea:focus {
+    outline:1;
+    outline-color: #005092;
+    background-color: none;
+}
+::-webkit-input-placeholder {color:#8499AD;}
+:-moz-placeholder {color:#8499AD;}
+::-moz-placeholder {color:#8499AD;}
+:-ms-input-placeholder {color:#8499AD;}
+
+.checkbox {
+  margin-bottom: 25px;
+}
+
+input.radio, input.checkbox {
+  padding: 10px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 15px;
+  line-height: 1;
+  padding-left: 15px
+}
+
+.success {
+  color: var(--funkgreen);
+  text-align: left;
+  padding: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--funkgreen);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup h1, .popup p {
+  color: white;
+}
+#closePopup {
+  background-color: white ;
+  color: var(--funkgreen);
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.homebutton {
+  position: absolute;
+  left: 5%;
+  bottom: 50px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  z-index: 2;
+}
+.homebutton a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*----------------------------------
+    Footer
+-----------------------------------*/
+footer h1, footer p, footer a {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0;
+}
+footer p {
+  padding-right: 50px;
+}
+footer  {
+    margin-top: 100px;
+    background: var(--funkblue);
+    display: flex;
+    margin-top: 70px;
+    padding:30px;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+/*----------------------------------
+    Mobile
+-----------------------------------*/
+
+
+@media only screen and (max-width: 820px) {
+  h1, h2 {font-size: 24px;}
+  h1.header {font-size: 60px;}
+  h2.header {font-size: 30px;}
+  h3, .containerform p {font-size: 16px; text-align: left;}
+  p, label, input, textarea, button, a {font-size: 16px;}
+  section {width: 90%;}
+  .homebutton {bottom: 30px;}
+  .containerform form {margin: 20px 0 0;}
+  .gitem02 {grid-column: span 2; padding-bottom: 0px !important;}
+  .noline {padding-bottom: 0;}
+  .footer01, .footer02 {position: relative; left: auto; right: auto; bottom: auto; padding-top: 15px;}
+  .popup {left: 8%; transform: translate(-4%, -50%);}
+}
+
+@media only screen and (max-width: 600px) {
+  h1.header {font-size: 45px;}
+  h2.header {font-size: 32px; line-height: 1.2;}
+  h2.fix {font-size: 18px; padding-top: 12px;}
+  .event-title {padding: 20px 30px;}
+  .center {grid-template-columns: 1fr;}
+  .center img {max-width: 200px; padding: 30px 0 10px;}
+  footer {gap: 10px;align-items: flex-start;flex-direction: column; margin-top: 10px;}
+}
