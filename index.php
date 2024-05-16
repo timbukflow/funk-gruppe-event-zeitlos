@@ -148,9 +148,9 @@
                   <label for="checkbox1">Ja, ich nehme gerne teil</label>
               </div>
               <div>
-                  <input class="radio" type="radio" id="additionalPerson" name="teilnahme" value="Ja, ich nehme gerne teil und komme mit Begleitung" tabindex="2" 
-                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil und komme mit Begleitung") ? "checked" : "" ?>>
-                  <label for="additionalPerson">Ja, ich nehme gerne teil und komme mit Begleitung</label>
+                  <input class="radio" type="radio" id="additionalPerson" name="teilnahme" value="Ja, ich nehme gerne teil und komme in Begleitung" tabindex="2" 
+                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil und komme in Begleitung") ? "checked" : "" ?>>
+                  <label for="additionalPerson">Ja, ich nehme gerne teil und komme in Begleitung</label>
               </div>
               <div>
                   <input class="radio" type="radio" id="checkbox3" name="teilnahme" value="Leider bin ich verhindert" tabindex="3"
@@ -197,6 +197,9 @@
 
           <!-- Zusätzliche Felder für die weitere Person -->
           <fieldset id="additionalPersonFields" style="display:none;">
+            <div>
+              <p>Meine Begleitung</p>
+            </div>
             <fieldset>
               <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
               <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>

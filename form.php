@@ -60,7 +60,7 @@
     }
 
     // Zusätzliche Person 
-    if ($teilnahme == 'Ja, ich nehme gerne teil und komme mit Begleitung') {
+    if ($teilnahme == 'Ja, ich nehme gerne teil und komme in Begleitung') {
         if (empty($_POST["vorname2"])) {
             $errors["vorname2"] = "Vorname ist erforderlich";
         } else {
@@ -96,6 +96,10 @@
                 $errors["email2"] = "Diese Email Adresse ist nicht korrekt";
             }
         }
+
+        if (isset($_POST["essenspraferenz2"])) {
+            $essenspraferenz2 = $_POST["essenspraferenz2"];
+        }
     }
 
     return $errors;
@@ -121,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $message_body .= "Essenspräferenz: " . sanitizeInput($essenspraferenz) . "\n";
             }
 
-            if ($teilnahme == 'Ja, ich nehme gerne teil und komme mit Begleitung') {
+            if ($teilnahme == 'Ja, ich nehme gerne teil und komme in Begleitung') {
                 $message_body .= "\nWeitere Person:\n";
                 $message_body .= "Vorname: " . sanitizeInput($vorname2) . "\n";
                 $message_body .= "Name: " . sanitizeInput($name2) . "\n";
