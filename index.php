@@ -22,11 +22,11 @@
 
     <section>
       <article class="intro">
-        <h1>Herzliche Einladung</h1>
+        <h1>Persönliche Einladung</h1>
         <p>
           Geschätzte Geschäftspartner
           <br><br>
-          Wir freuen uns, Sie zu unserem Kundenevent <strong>#zeitlos</strong> einzuladen! Gemeinsam mit Ihnen möchten wir einen unvergesslichen Abend in der Zentralschweiz verbringen. Der industrielle Charme der alten &laquo;Viscose&raquo; bietet den perfekten Rahmen, um gemeinsam auf <strong>145 Jahre Funk</strong> zurückzuschauen und einen Blick in die ferne Zukunft zu werfen.
+          Wir freuen uns, Sie und Ihre Begleitung zu unserem Kundenevent <strong>#zeitlos</strong> einzuladen! Gemeinsam mit Ihnen möchten wir einen unvergesslichen Abend in der Zentralschweiz verbringen. Der industrielle Charme der alten &laquo;Viscose&raquo; bietet den perfekten Rahmen, um gemeinsam auf <strong>145 Jahre Funk</strong> zurückzuschauen und einen Blick in die ferne Zukunft zu werfen.
         </p>
         <p class="text">
           <strong>Was erwartet Sie?</strong>
@@ -72,7 +72,7 @@
             <div class="grid02 center">
               <img src="./img/zoe-torinesi-m.jpg" alt="Zoe Torinesi">
               <p class="noline">
-                <strong>Zoe Torinesi,</strong> <br> eine erfahrene Moderatorin, leitet seit vielen Jahren erfolgreich zahlreiche Veranstaltungen und Schweizer TV-Formate. Sie spricht fließend vier Sprachen und betreibt seit 2014 ihren erfolgreichen Foodblog.
+                <strong>Zoe Torinesi,</strong> <br> eine erfahrene Moderatorin, leitet seit vielen Jahren erfolgreich zahlreiche Veranstaltungen und Schweizer TV-Formate. Sie spricht fliessend vier Sprachen und betreibt seit 2014 ihren erfolgreichen Foodblog.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@
           <div class="acclist">
             <div class="grid01">
               <p>
-                Um Ihnen die Planung Ihrer Anreise und Übernachtung zu erleichtern, empfehlen wir Ihnen einige nahegelegene Hotels, in denen Sie auf Selbstkosten übernachten können.
+                Falls Sie gerne übernachten möchten, empfehlen wir Ihnen einige nahegelegene Hotels (Buchung auf Eigenkosten).
               </p>
               <p>
                 <strong>LUX Businesshotel:</strong> <br>
@@ -250,8 +250,8 @@
         </form>
 
         <div id="popup" class="popup">
-            <h1>Vielen Dank für Ihr Interesse!</h1> 
-            <p>Ihre An- oder Abmeldung haben wir erhalten. Gerne werden wir Ihnen kurz vor dem Anlass nochmals die wichtigsten Infos per Mail zustellen.<br><br>
+            <h1>Herzlichen Dank für Ihr Interesse!</h1> 
+            <p>Ihre An- oder Abmeldung haben wir erhalten und wird geprüft. Sie erhalten in den nächsten Tagen definitiv Bescheid bzw. eine Bestätigung.<br><br>
             Herzliche Grüsse <br> 
             Ihr Funk-Team <br>
             <button id="closePopup">Alles klar!</button>
