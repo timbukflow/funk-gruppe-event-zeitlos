@@ -24,7 +24,7 @@
       <article class="intro">
         <h1>Persönliche Einladung</h1>
         <p>
-          Geschätzte Geschäftspartner
+          Geschätzte Geschäftspartnerin, geschätzter Geschäftspartner
           <br><br>
           Wir freuen uns, Sie und Ihre Begleitung zu unserem Kundenevent <strong>#zeitlos</strong> einzuladen! Gemeinsam mit Ihnen möchten wir einen unvergesslichen Abend in der Zentralschweiz verbringen. Der industrielle Charme der alten &laquo;Viscose&raquo; bietet den perfekten Rahmen, um gemeinsam auf <strong>145 Jahre Funk</strong> zurückzuschauen und einen Blick in die ferne Zukunft zu werfen.
         </p>
