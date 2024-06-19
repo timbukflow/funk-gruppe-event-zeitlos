@@ -134,7 +134,7 @@
       <div id="anmeldung" class="containerform">
         <h2>Anmeldung</h2>
         <p>
-            Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <strong>Anmeldeschluss ist am 14. Juni 2024.</strong>
+            Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <!-- <strong>Anmeldeschluss ist am 14. Juni 2024.</strong> -->
         </p>
         
         <?php include('form.php'); ?>
