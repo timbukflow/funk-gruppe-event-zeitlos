@@ -211,8 +211,8 @@
             </fieldset>
 
             <fieldset>
-              <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="12">
-              <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
+              <input placeholder="Firma" type="text" name="firma2" value="<?= htmlspecialchars($firma2 ?? '', ENT_QUOTES) ?>" tabindex="12">
+              <span class="error"><?= htmlspecialchars($errors['firma2'] ?? '') ?></span>
             </fieldset>
 
             <fieldset>

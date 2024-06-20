@@ -79,14 +79,15 @@
             }
         }
     
-        if (empty($_POST["firma2"])) {
-            $errors["firma2"] = "Firma ist erforderlich";
-        } else {
-            $firma2 = filter_var($_POST["firma2"], FILTER_SANITIZE_STRING);
-            if (empty($firma2)) {
+        if (!empty($_POST["firma2"])) {
+            $firma2 = filter_var($_POST["firma2"], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            if ($firma2 === false) {
                 $errors["firma2"] = "Es sind nur Buchstaben erlaubt";
             }
+        } else {
+            $firma2 = '';
         }
+        
     
         if (empty($_POST["email2"])) {
             $errors["email2"] = "Email ist erforderlich";
