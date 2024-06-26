@@ -251,7 +251,7 @@
 
         <div id="popup" class="popup">
             <h1>Herzlichen Dank für Ihr Interesse!</h1> 
-            <p>Ihre An- oder Abmeldung haben wir erhalten und wird geprüft. Sie erhalten in den nächsten Tagen definitiv Bescheid bzw. eine Bestätigung.<br><br>
+            <p>Ihre An- oder Abmeldung haben wir erhalten und wird geprüft.<br><br>
             Herzliche Grüsse <br> 
             Ihr Funk-Team <br>
             <button id="closePopup">Alles klar!</button>
