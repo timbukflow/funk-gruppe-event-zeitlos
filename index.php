@@ -38,6 +38,9 @@
           </ul>
         </p>
         <p class="text">
+          <strong>Dresscode:</strong> Smart Casual
+        </p>
+        <p class="text">
           Wir freuen uns auf #zeitlos und vor allem auf Sie!
         </p>
       </article>
@@ -57,8 +60,8 @@
               <p>Türöffnung und Apéro </p>
               <p>18:00 Uhr</p>
               <p>Beginn und Begrüssung, Dinner und überraschende Show Acts</p>
-              <p class="noline" >24.00 Uhr </p>
-              <p class="noline" >Ende</p>
+              <p class="noline" >21:30 Uhr </p>
+              <p class="noline" >Ende offizieller Teil / Ausklang bis 24.00 Uhr</p> 
             </div>
           </div>
         </div>
@@ -73,6 +76,27 @@
               <img src="./img/zoe-torinesi-m.jpg" alt="Zoe Torinesi">
               <p class="noline">
                 <strong>Zoe Torinesi,</strong> <br> eine erfahrene Moderatorin, leitet seit vielen Jahren erfolgreich zahlreiche Veranstaltungen und Schweizer TV-Formate. Sie spricht fliessend vier Sprachen und betreibt seit 2014 ihren erfolgreichen Foodblog.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="acctitle">
+          <h2>Keynotes</h2>
+          <div class="pmcontainer">
+            <div class="plus"></div>
+            <div class="minus"></div>
+          </div>
+          <div class="acclist">
+            <div class="grid02 center">
+              <img src="./img/urs-bleisch.jpg" alt="Urs A. Bleisch">
+              <p class="noline">
+                <strong>Urs A. Bleisch</strong> <br> CEO und Präsident des Verwaltungsrates
+              </p>
+            </div>
+            <div class="grid02 center">
+              <img src="./img/anja-funk-muenchmeye.jpg" alt="Dr. Anja Funk-Münchmeyer">
+              <p class="noline">
+                <strong>Dr. Anja Funk-Münchmeyer</strong> <br> Geschäftsführende Gesellschafterin
               </p>
             </div>
           </div>
