@@ -10,5 +10,9 @@
     </div>
     <div class="footer02">
         <h1>Die beste Empfehlung. Funk.</h1>
+        <div class="footer-logo">
+            <img src="img/funk-logo.svg" alt="funk logo">
+        </div> 
     </div> 
+    
 </footer>
