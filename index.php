@@ -88,15 +88,15 @@
           </div>
           <div class="acclist">
             <div class="grid02 center">
-              <img src="./img/urs-bleisch.jpg" alt="Urs A. Bleisch">
+              <img src="./img/anja-funk-muenchmeye.jpg" alt="Dr. Anja Funk-Münchmeyer">
               <p class="noline">
-                <strong>Urs A. Bleisch</strong> <br> CEO und Präsident des Verwaltungsrates
+                <strong>Dr. Anja Funk-Münchmeyer</strong> <br> Geschäftsführende Gesellschafterin, Funk Gruppe
               </p>
             </div>
             <div class="grid02 center">
-              <img src="./img/anja-funk-muenchmeye.jpg" alt="Dr. Anja Funk-Münchmeyer">
+              <img src="./img/urs-bleisch.jpg" alt="Urs A. Bleisch">
               <p class="noline">
-                <strong>Dr. Anja Funk-Münchmeyer</strong> <br> Geschäftsführende Gesellschafterin
+                <strong>Urs A. Bleisch</strong> <br> CEO und Präsident des Verwaltungsrates, Funk Insurance Brokers AG
               </p>
             </div>
           </div>
