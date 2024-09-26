@@ -88,9 +88,9 @@
           </div>
           <div class="acclist">
             <div class="grid02 center">
-              <img src="./img/anja-funk-muenchmeye.jpg" alt="Dr. Anja Funk-Münchmeyer">
+              <img src="./img/anja-funk-muenchmeye.jpg" alt="Dr. Anja Funk">
               <p class="noline">
-                <strong>Dr. Anja Funk-Münchmeyer</strong> <br> Geschäftsführende Gesellschafterin, Funk Gruppe
+                <strong>Dr. Anja Funk</strong> <br> Geschäftsführende Gesellschafterin, Funk Gruppe
               </p>
             </div>
             <div class="grid02 center">
@@ -155,132 +155,7 @@
         </div>
       </article>
       
-      <div id="anmeldung" class="containerform">
-        <h2>Anmeldung</h2>
-        <p>
-            Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <!-- <strong>Anmeldeschluss ist am 14. Juni 2024.</strong> -->
-        </p>
-        
-        <?php include('form.php'); ?>
-        <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate>
-          
-        <!-- Checkbox -->
-          <fieldset class="checkbox">
-              <div>
-                  <input class="radio" type="radio" id="checkbox1" name="teilnahme" value="Ja, ich nehme gerne teil" tabindex="1" 
-                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil") ? "checked" : "" ?>>
-                  <label for="checkbox1">Ja, ich nehme gerne teil</label>
-              </div>
-              <div>
-                  <input class="radio" type="radio" id="additionalPerson" name="teilnahme" value="Ja, ich nehme gerne teil und komme in Begleitung" tabindex="2" 
-                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil und komme in Begleitung") ? "checked" : "" ?>>
-                  <label for="additionalPerson">Ja, ich nehme gerne teil und komme in Begleitung</label>
-              </div>
-              <div>
-                  <input class="radio" type="radio" id="checkbox3" name="teilnahme" value="Leider bin ich verhindert" tabindex="3"
-                  <?= (isset($teilnahme) && $teilnahme == "Leider bin ich verhindert") ? "checked" : "" ?>>
-                  <label for="checkbox3">Leider bin ich verhindert</label>
-              </div>
-              <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
-          </fieldset>
-          
-        <!-- Person 01 -->
-          <fieldset>
-            <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="4" autofocus>
-            <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
-          </fieldset>
-
-          <fieldset>
-            <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="5">
-            <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
-          </fieldset>
-
-          <fieldset>
-            <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="6">
-            <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
-          </fieldset>
-
-          <fieldset>
-            <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="7">
-            <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
-          </fieldset>
-          
-          <!-- Person 01 - Essenspraferenz -->
-          <fieldset class="checkbox">
-            <div>
-              <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="vegetarisch" tabindex="8" 
-              <?= (isset($essenspraferenz) && $essenspraferenz == "vegetarisch") ? "checked" : "" ?>>
-              <label for="checkboxvegi">vegetarisch</label>
-            </div>
-            <div>
-              <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="mit Fleisch" tabindex="9"
-              <?= (isset($essenspraferenz) && $essenspraferenz == "mit Fleisch") ? "checked" : "" ?>>
-              <label for="checkboxfleisch">mit Fleisch</label>
-            </div>
-          </fieldset>
-
-          <!-- Zusätzliche Felder für die weitere Person -->
-          <fieldset id="additionalPersonFields" style="display:none;">
-            <div>
-              <p>Meine Begleitung</p>
-            </div>
-            <fieldset>
-              <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="10">
-              <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
-            </fieldset>
-
-            <fieldset>
-              <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="11">
-              <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
-            </fieldset>
-
-            <fieldset>
-              <input placeholder="Firma" type="text" name="firma2" value="<?= htmlspecialchars($firma2 ?? '', ENT_QUOTES) ?>" tabindex="12">
-              <span class="error"><?= htmlspecialchars($errors['firma2'] ?? '') ?></span>
-            </fieldset>
-
-            <fieldset>
-              <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="13">
-              <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
-            </fieldset>
-
-            <!-- Person 02 - Essenspraferenz -->
-            <fieldset class="checkbox">
-              <div>
-                <input class="radio" type="radio" id="checkboxvegi2" name="essenspraferenz2" value="vegetarisch" tabindex="14" 
-                <?= (isset($essenspraferenz2) && $essenspraferenz2 == "vegetarisch") ? "checked" : "" ?>>
-                <label for="checkboxvegi2">vegetarisch</label>
-              </div>
-              <div>
-                <input class="radio" type="radio" id="checkboxfleisch2" name="essenspraferenz2" value="mit Fleisch" tabindex="15"
-                <?= (isset($essenspraferenz2) && $essenspraferenz2 == "mit Fleisch") ? "checked" : "" ?>>
-                <label for="checkboxfleisch2">mit Fleisch</label>
-              </div>
-            </fieldset>
-          </fieldset>
-
-            
-          <!-- Mitteilung -->
-          <fieldset>
-            <textarea placeholder="Mitteilung" name="mitteilung" tabindex="16" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
-              <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
-          </fieldset>
-
-          <!-- Button -->
-          <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
-          </fieldset>
-          <div class="success"><?= htmlspecialchars($success); ?></div>
-        </form>
-
-        <div id="popup" class="popup">
-            <h1>Herzlichen Dank für Ihr Interesse!</h1> 
-            <p>Ihre An- oder Abmeldung haben wir erhalten und wird geprüft.<br><br>
-            Herzliche Grüsse <br> 
-            Ihr Funk-Team <br>
-            <button id="closePopup">Alles klar!</button>
-        </div>
-    </div> 
+     <!-- Anmeldung siehe Git-Repo Event-Full  -->
     </section>
 
     <script>
