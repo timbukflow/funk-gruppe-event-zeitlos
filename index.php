@@ -17,7 +17,7 @@
           <h2 class="fix">26. September 2024</h2>
         </div>
         <div class="event-container-img"></div> 
-        <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
+        <!-- <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button> -->
     </header>
 
     <section>

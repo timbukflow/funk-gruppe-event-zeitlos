@@ -398,7 +398,7 @@ footer p {
 footer  {
     background: var(--funkblue);
     display: flex;
-    margin-top: 0px;
+    margin-top: 80px;
     padding:30px;
     gap: 30px;
     justify-content: space-between;
@@ -442,5 +442,5 @@ footer  {
   .event-title {padding: 20px 30px;}
   .center {grid-template-columns: 1fr; gap: 10px;}
   .center img {max-width: 250px;}
-  footer {gap: 10px;align-items: flex-start; flex-direction: column; margin-top: 10px;}
+  footer {gap: 10px;align-items: flex-start; flex-direction: column; margin-top: 40px;}
 }
